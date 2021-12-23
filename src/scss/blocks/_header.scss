@@ -1,0 +1,68 @@
+.header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &-slider {
+        display: flex;
+        height: 100vh;
+        width: 300%;
+
+        // - PARA QUE SE ENFOQUE LA 2DA SECTION del SLIDER -
+        margin-left: -100%;
+
+        @include tablet {
+            height: 100%;
+        }
+    }
+
+    &-section {
+        @include tablet {
+            display: flex;
+            width: 100vw;
+        }
+    }
+
+
+
+
+    &-img {
+        width: 100vw;
+        object-fit: cover;
+
+        @include tablet {
+            position: relative;
+            display: block;
+            max-width: 59vw;
+        }
+    }
+
+    &-content {
+        margin: 4.5rem 1.5rem;
+
+        @include tablet {
+            margin: 7rem 6rem;
+
+        }
+    }
+
+    &-title {
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            font-size: 2.4rem;
+        }
+    }
+
+    &-text {
+        color: var(--gray-color);
+        font-size: .75rem;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+
+}

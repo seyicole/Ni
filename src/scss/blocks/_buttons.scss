@@ -1,0 +1,23 @@
+.cta {
+    cursor: pointer;
+
+    
+    &__link {
+        text-decoration: none;
+        color: var(--black-color);
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: 600;
+
+        @include hover {
+            color: var(--gray-color);
+        }
+    }
+
+    &__icon {
+        padding-left: 3rem;
+        @include hover {
+            filter:invert(50%);
+        }
+    }
+}

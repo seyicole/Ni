@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+@import "config/variables";
+@import "base/base";
+@import "mixins/reset-list";
+@import "mixins/breakpoints";
+@import "mixins/hover";
+
+
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/menu";
+@import "blocks/menu-mobile";
+@import "blocks/main";
+@import "blocks/buttons";
+@import "blocks/arrows";
+@import "blocks/section";
+@import "blocks/footer";
+
+@import "blocks/copy";

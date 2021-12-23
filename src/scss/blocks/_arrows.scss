@@ -1,0 +1,56 @@
+.arrows {
+    position: absolute;
+    top: 81vw;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    gap: 1rem;
+    background-color: var(--black-color);
+    padding: 1.3rem 1.5rem;
+
+    @include tablet {
+        top: 85%;
+        left: 59%;
+        width: 170px;
+        padding: 2rem;
+    }
+
+    // ---- HOVER Botones SLIDER ----------
+    &__cont--prev {
+        @include hover {
+            background-color: var(--grayish-color);
+            padding: 2rem;
+            margin-top: -2rem;
+            margin-left: -2rem;
+        }
+    }
+
+    &__cont--next {
+        @include hover {
+            background-color: var(--grayish-color);
+            padding: 2rem;
+            margin-top: -2rem;
+            margin-right: -2rem;
+        }
+    }
+
+
+
+    &__prev,
+    &__next {
+        height: 15px;
+        cursor: pointer;
+        position: relative;
+
+        @include tablet {
+            height: 25px;
+
+            @include hover {
+            }
+        }
+
+        
+        
+    }
+}

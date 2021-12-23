@@ -1,0 +1,17 @@
+#menu-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+    @include mobile {
+        display: initial;
+    }
+}
+
+// Cambio de colores con JS
+.menu-btn {
+    color: var(--white-color);
+}
+.menu-btn.active {
+    color: var(--gray-color);
+}

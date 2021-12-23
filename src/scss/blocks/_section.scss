@@ -1,0 +1,55 @@
+.section {
+    margin: 0;
+    text-align: left;
+
+    @include tablet {
+        display: flex;
+    }
+
+    &-first {
+        width: 100%;
+        object-fit: cover;
+
+        @include tablet {
+            width: 135%;
+        }
+    }
+
+    &-last {
+        width: 100%;
+        object-fit: cover;
+
+        @include tablet {
+            width: 135%;
+        }
+    }
+
+    &-middle {
+        margin: 3rem 1.5rem;
+
+        @include tablet {
+            margin: 5rem 3rem;
+        }
+    }
+
+    &-title {
+        font-size: .75rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 4px;
+
+        @include tablet {
+            font-size: .9rem;
+            margin-bottom: 2rem;
+        }
+
+    }
+    &-text {
+        font-size: .75rem;
+        font-weight: 500;
+        line-height: 1.65;
+        color: var(--gray-color);
+    }
+
+}
+
